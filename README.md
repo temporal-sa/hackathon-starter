@@ -10,9 +10,8 @@ Run a Temporal hackathon
     * [Cloud](#cloud)
 * [Resources](#resources)
 * [Your development environment](#your-development-environment)
-  * [Dev Containers](#dev-containers)
-    * [VSCode](#vscode)
-    * [Codespaces](#codespaces)
+  * [Codespaces](#codespaces)
+  * [Dev Containers (local)](#dev-containers-local)
   * [Gitpod](#gitpod)
   * [Local development](#local-development)
 
@@ -57,12 +56,14 @@ You're free to use any development environment you wish, but we have provided
 some pre-configured environments so you can started quicker. These are all supported
 equally and you should choose the setup that you're most comfortable with.
 
-### Dev Containers
+### Codespaces
 
-A development container allows you to use a container as a fully-featured development
-environment.
+[Codespaces](https://github.com/features/codespaces) is a remote development
+environment that allows one-click configuration of your development environment.
 
-#### VSCode
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/temporal-sa/hackathon-starter)
+
+### Dev Containers (local)
 
 1. Install [Docker](https://www.docker.com/get-started/)
 1. Install [VSCode](https://code.visualstudio.com/) or [VSCode Insiders](https://code.visualstudio.com/insiders/)
@@ -70,10 +71,6 @@ environment.
 1. Either:
     * Clone this repo and open in VSCode, or
     * [Open in Dev Containers](http://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/temporal-sa/hackathon-starter)
-
-#### Codespaces
-
-To follow
 
 ### Gitpod
 
