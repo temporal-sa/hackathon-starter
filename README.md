@@ -9,10 +9,12 @@ Run a Temporal hackathon
     * [Local](#local)
     * [Cloud](#cloud)
 * [Resources](#resources)
+* [Supported languages](#supported-languages)
 * [Your development environment](#your-development-environment)
   * [Codespaces](#codespaces)
   * [Dev Containers (local)](#dev-containers-local)
   * [Gitpod](#gitpod)
+  * [Docker](#docker)
   * [Local development](#local-development)
 
 <!-- Regenerate with "pre-commit run -a markdown-toc" -->
@@ -48,6 +50,13 @@ by [configuring these environment variables](https://docs.temporal.io/develop/en
 * [Introduction to Workflows](https://docs.temporal.io/workflows)
 * [What is an Activity?](https://docs.temporal.io/activities)
 
+## Supported languages
+
+Temporal a code-first platform and [many languages are supported](https://docs.temporal.io/encyclopedia/temporal-sdks#official-sdks).
+For this hackathon, see the individual languages:
+
+* [Go](./golang)
+
 ## Your development environment
 
 This is a hands-on hackathon, so you will need to write some code.
@@ -78,6 +87,14 @@ environment that allows one-click configuration of your development environment.
 one-click configuration of your development environment.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/temporal-sa/hackathon-starter)
+
+### Docker
+
+> This will run the Temporal UI on [localhost:8080](http://localhost:8080)
+
+1. Enter the directory for the language you wish to develop in (eg, `cd golang`)
+1. In one terminal window, run `docker compose up worker`
+1. In another terminal window, run `docker compose up starter`
 
 ### Local development
 
