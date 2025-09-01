@@ -1,0 +1,50 @@
+{
+  "name": "hackathon-starter",
+  "version": "0.0.0",
+  "private": true,
+  "main": "lib/worker",
+  "scripts": {
+    "build": "tsc --build",
+    "build.watch": "tsc --build --watch",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "starter": "ts-node src/starter.ts",
+    "test": "mocha --exit --require ts-node/register --require source-map-support/register src/mocha/*.test.ts",
+    "worker": "ts-node src/worker.ts",
+    "worker:watch": "nodemon src/worker.ts"
+  },
+  "nodemonConfig": {
+    "execMap": {
+      "ts": "ts-node"
+    },
+    "ext": "ts",
+    "watch": [
+      "src"
+    ]
+  },
+  "dependencies": {
+    "@temporalio/activity": "^1.13.0",
+    "@temporalio/client": "^1.13.0",
+    "@temporalio/worker": "^1.13.0",
+    "@temporalio/workflow": "^1.13.0",
+    "nanoid": "^5.1.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.34.0",
+    "@temporalio/testing": "^1.13.0",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "@tsconfig/node22": "^22.0.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^24.3.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "globals": "^16.3.0",
+    "mocha": "^11.7.2",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.4.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.41.0"
+  }
+}

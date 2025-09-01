@@ -20,6 +20,7 @@ tasks:
   - name: Install dependencies
     init: |
       go install github.com/air-verse/air@latest
+      (cd typescript/ && npm ci)
       gp sync-done dependencies
     command: exit
 
@@ -38,6 +39,10 @@ tasks:
     openMode: tab-after
 
 ports:
+  - name: Temporal UI (Docker)
+    port: 8080
+    onOpen: notify
+
   - name: Temporal UI
     port: 8233
     onOpen: notify

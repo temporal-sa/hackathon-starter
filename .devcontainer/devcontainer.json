@@ -24,6 +24,7 @@
     "PRE_COMMIT_HOME": "/home/vscode/.cache/pre-commit"
   },
   "forwardPorts": [
+    8080,
     8233
   ],
   "initializeCommand": {
@@ -34,6 +35,7 @@
     "install-air": "go install github.com/air-verse/air@latest"
   },
   "postStartCommand": {
-    "temporal-server": "nohup bash -c 'temporal server start-dev &'"
+    "temporal-server": "nohup bash -c 'temporal server start-dev &'",
+    "npm-install": "cd typescript && npm ci"
   }
 }
