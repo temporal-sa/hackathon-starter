@@ -14,6 +14,7 @@ Run a Temporal hackathon
     * [VSCode](#vscode)
     * [Codespaces](#codespaces)
   * [Gitpod](#gitpod)
+  * [Local development](#local-development)
 
 <!-- Regenerate with "pre-commit run -a markdown-toc" -->
 
@@ -80,3 +81,18 @@ To follow
 one-click configuration of your development environment.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/temporal-sa/hackathon-starter)
+
+### Local development
+
+If you wish to configure Temporal manually, you will need to install the following
+dependencies:
+
+* [Temporal CLI](https://docs.temporal.io/cli)
+* [Git](https://git-scm.com/downloads)
+
+Optional dependencies
+
+* [Docker](https://www.docker.com/get-started)
+* [Go](https://go.dev)
+* [Python](https://www.python.org/downloads)
+* [NodeJS](https://nodejs.org/en/download)
