@@ -9,3 +9,5 @@ Thumbs.db
 .commit
 .devbox
 .envrc
+
+nohup.out
