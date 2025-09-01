@@ -13,6 +13,7 @@ Run a Temporal hackathon
   * [Dev Containers](#dev-containers)
     * [VSCode](#vscode)
     * [Codespaces](#codespaces)
+  * [Gitpod](#gitpod)
 
 <!-- Regenerate with "pre-commit run -a markdown-toc" -->
 
@@ -72,3 +73,10 @@ environment.
 #### Codespaces
 
 To follow
+
+### Gitpod
+
+[Gitpod](https://www.gitpod.io) is a remote development environment that allows
+one-click configuration of your development environment.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/temporal-sa/hackathon-starter)

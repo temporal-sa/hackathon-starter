@@ -1,0 +1,43 @@
+env:
+  TEMPORAL_ADDRESS: localhost:7233
+
+vscode:
+  extensions:
+    - esbenp.prettier-vscode
+    - golang.Go
+    - dbaeumer.vscode-eslint
+    - ms-python.python
+    - ms-python.vscode-pylance
+    - ms-python.autopep8
+
+tasks:
+  - name: Temporal server
+    init: |
+      brew install temporal
+      gp sync-done temporal
+    command: temporal server start-dev
+
+  - name: Install dependencies
+    init: |
+      go install github.com/air-verse/air@latest
+      gp sync-done dependencies
+    command: exit
+
+  - name: Install pre-commit
+    init: |
+      pip install pre-commit
+      pre-commit install --install-hooks -t pre-commit -t commit-msg --allow-missing-config || true
+      gp sync-done pre-commit
+    command: exit
+    openMode: split-right
+
+  - name: Shell
+    init: |
+      gp sync-await dependencies
+      gp sync-await temporal
+    openMode: tab-after
+
+ports:
+  - name: Temporal UI
+    port: 8233
+    onOpen: notify
