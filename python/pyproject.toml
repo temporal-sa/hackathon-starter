@@ -1,0 +1,17 @@
+[project]
+name = "python"
+version = "0.0.0"
+description = "Python hackathon starter"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["temporalio>=1.16.0"]
+
+[dependency-groups]
+dev = [
+  "poethepoet>=0.37.0",
+  "ruff>=0.12.11",
+  "watchdog>=6.0.0",
+]
+
+[tool.poe.tasks]
+dev = "watchmedo auto-restart -p '*.py' -R -- uv run ./src/worker.py"

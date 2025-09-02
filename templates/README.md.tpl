@@ -121,6 +121,7 @@ dependencies:
 ##### Python
 
 * [Python](https://www.python.org/downloads)
+* [uv](https://docs.astral.sh/uv)
 
 ##### TypeScript
 
