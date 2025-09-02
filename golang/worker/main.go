@@ -18,7 +18,7 @@ func main() {
 	defer c.Close()
 
 	// Create the workflow with the task queue "hackathon"
-	w := worker.New(c, "hackathon", worker.Options{})
+	w := worker.New(c, golang.TASK_QUEUE_NAME, worker.Options{})
 
 	// Register the workflows
 	w.RegisterWorkflow(golang.HelloWorld)

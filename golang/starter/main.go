@@ -18,7 +18,7 @@ func main() {
 	defer c.Close()
 
 	workflowOptions := client.StartWorkflowOptions{
-		TaskQueue: "hackathon",
+		TaskQueue: golang.TASK_QUEUE_NAME,
 	}
 
 	ctx := context.Background()
