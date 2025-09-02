@@ -4,19 +4,6 @@ Run a Temporal hackathon
 
 <!-- toc -->
 
-* [Getting started](#getting-started)
-  * [Running Temporal](#running-temporal)
-    * [Local](#local)
-    * [Cloud](#cloud)
-* [Resources](#resources)
-* [Supported languages](#supported-languages)
-* [Your development environment](#your-development-environment)
-  * [Codespaces](#codespaces)
-  * [Dev Containers (local)](#dev-containers-local)
-  * [Gitpod](#gitpod)
-  * [Docker](#docker)
-  * [Local development](#local-development)
-
 <!-- Regenerate with "pre-commit run -a markdown-toc" -->
 
 <!-- tocstop -->
@@ -70,7 +57,7 @@ equally and you should choose the setup that you're most comfortable with.
 [Codespaces](https://github.com/features/codespaces) is a remote development
 environment that allows one-click configuration of your development environment.
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/temporal-sa/hackathon-starter)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/__OWNER__/__REPO__)
 
 ### Dev Containers (local)
 
@@ -79,14 +66,14 @@ environment that allows one-click configuration of your development environment.
 1. Install the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 1. Either:
     * Clone this repo and open in VSCode, or
-    * [Open in Dev Containers](http://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/temporal-sa/hackathon-starter)
+    * [Open in Dev Containers](http://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/__OWNER__/__REPO__)
 
 ### Gitpod
 
 [Gitpod](https://www.gitpod.io) is a remote development environment that allows
 one-click configuration of your development environment.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/temporal-sa/hackathon-starter)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/__OWNER__/__REPO__)
 
 ### Docker
 
