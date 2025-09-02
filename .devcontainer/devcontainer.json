@@ -15,7 +15,8 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "esbenp.prettier-vscode"
+        "esbenp.prettier-vscode",
+        "tamasfe.even-better-toml"
       ]
     }
   },
@@ -36,6 +37,7 @@
   },
   "postStartCommand": {
     "temporal-server": "nohup bash -c 'temporal server start-dev &'",
-    "npm-install": "cd typescript && npm ci"
+    "npm-install": "cd typescript && npm ci",
+    "python-install": "cd python && uv sync"
   }
 }

@@ -26,5 +26,7 @@
   "go.lintTool": "golangci-lint",
   "go.lintFlags": [
     "--fast"
-  ]
+  ],
+  "python.defaultInterpreterPath": "${workspaceFolder}/python/.venv/bin/python",
+  "python-envs.pythonProjects": []
 }
