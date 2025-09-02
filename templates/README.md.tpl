@@ -1,6 +1,6 @@
 # Hackathon Starter
 
-Run a Temporal hackathon
+Run a [Temporal](https://temporal.io) hackathon
 
 <!-- toc -->
 
@@ -12,6 +12,9 @@ Run a Temporal hackathon
 
 Thanks for joining in with this hackathon. It's designed to be enjoyable and
 educational.
+
+The first step is to [fork this repo](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
+or [use it as a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
 
 ### Running Temporal
 
