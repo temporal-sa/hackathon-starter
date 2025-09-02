@@ -29,6 +29,8 @@ will be connected to a local instance of Temporal.
 > [!TIP]
 > If you use a [supported development environment](#your-development-environment),
 > you may already have a running instance of Temporal.
+>
+> You can stop this with `make temporal-stop`.
 
 Run Temporal with `make temporal`. This will show the WebUI on [localhost:8233](http://localhost:8233)
 and your application will connect to this on `localhost:7233`.

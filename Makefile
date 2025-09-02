@@ -3,6 +3,7 @@ REPO_NAME ?= hackathon-starter
 
 TEMPLATES_DIR = templates
 README = README.md
+TEMPORAL_PID := $(shell pgrep -f "temporal server start-dev" | head -n 1)
 
 generate-readme:
 	@echo "Copy readme template"
@@ -21,3 +22,10 @@ generate-readme:
 temporal:
 	@temporal server start-dev --ip=0.0.0.0
 .PHONY: temporal
+
+temporal-stop:
+	@if [ -n "$(TEMPORAL_PID)" ]; then \
+		kill $(TEMPORAL_PID) || true; \
+	fi
+	@echo "Restart Temporal by running \"make temporal\""
+.PHONY: temporal-stop
