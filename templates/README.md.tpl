@@ -10,6 +10,9 @@ Run a [Temporal](https://temporal.io) hackathon
 
 ## Getting started
 
+> [!TIP]
+> See the [development environment setup](#your-development-environment)
+
 Thanks for joining in with this hackathon. It's designed to be enjoyable and
 educational.
 
@@ -23,6 +26,7 @@ will be connected to a local instance of Temporal.
 
 #### Local
 
+> [!TIP]
 > If you use a [supported development environment](#your-development-environment),
 > you may already have a running instance of Temporal.
 
@@ -81,6 +85,7 @@ one-click configuration of your development environment.
 
 ### Docker
 
+> [!TIP]
 > This will run the Temporal UI on [localhost:8080](http://localhost:8080)
 
 1. Enter the directory for the language you wish to develop in (eg, `cd golang`)
@@ -89,15 +94,33 @@ one-click configuration of your development environment.
 
 ### Local development
 
+> [!CAUTION]
+> You're strongly advised to use a pre-configured development environment as these
+> are tested to make your development environment setup rapid, easy and reliable.
+>
+> If you do want to configure local development, the latest version of these
+> dependencies should be used unless otherwise stated.
+
 If you wish to configure Temporal manually, you will need to install the following
 dependencies:
 
 * [Temporal CLI](https://docs.temporal.io/cli)
 * [Git](https://git-scm.com/downloads)
 
-Optional dependencies
+#### Optional dependencies
 
 * [Docker](https://www.docker.com/get-started)
+
+##### Go
+
 * [Go](https://go.dev)
+* [Air](https://github.com/air-verse/air)
+
+##### Python
+
 * [Python](https://www.python.org/downloads)
+
+##### TypeScript
+
 * [NodeJS](https://nodejs.org/en/download)
+* [nvm](https://github.com/nvm-sh/nvm)

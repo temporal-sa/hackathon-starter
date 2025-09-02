@@ -15,6 +15,10 @@ Build your Temporal application in TypeScript ([docs](https://docs.temporal.io/d
 
 ## Overview
 
+> [!IMPORTANT]
+> Make sure you have followed [the instructions to configure your development environment](../README.md#your-development-environment)
+> before reading this section.
+
 This repository is designed to be a quick-start for your TypeScript Temporal application.
 It is designed to be quick and easy to get started, rather than any example of
 best practice.

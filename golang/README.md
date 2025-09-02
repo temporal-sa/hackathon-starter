@@ -17,6 +17,10 @@ Build your Temporal application in Go ([docs](https://docs.temporal.io/develop/g
 
 ## Overview
 
+> [!IMPORTANT]
+> Make sure you have followed [the instructions to configure your development environment](../README.md#your-development-environment)
+> before reading this section.
+
 This repository is designed to be a quick-start for your Go Temporal application.
 It is designed to be quick and easy to get started, rather than any example of
 best practice.
@@ -33,7 +37,7 @@ This starter application consists of two parts:
 ### Workflow
 
 ```shell
-cd go
+cd golang
 air
 ```
 
@@ -45,7 +49,7 @@ You can also run this with `go run ./worker` and restarting after every code cha
 ### Starter
 
 ```shell
-cd go
+cd golang
 go run ./starter
 ```
 
