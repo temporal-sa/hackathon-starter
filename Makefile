@@ -4,13 +4,6 @@ REPO_NAME ?= hackathon-starter
 TEMPLATES_DIR = templates
 README = README.md
 
-define TOC_APPEND
-hello
-world
-endef
-
-TOC_APPEND_VAL := $(value TOC_APPEND)
-
 generate-readme:
 	@echo "Copy readme template"
 	@cp ${TEMPLATES_DIR}/${README}.tpl ${README}
