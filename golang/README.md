@@ -34,6 +34,10 @@ This starter application consists of two parts:
 
 ## Quick start
 
+Install [`Air`](https://github.com/air-verse/air#installation) to allow live
+reloading your long-running applications. This is installed automatically
+if you use have followed [the instructions to configure your development environment](../README.md#your-development-environment).
+
 ### Workflow
 
 ```shell
@@ -42,7 +46,7 @@ air
 ```
 
 The workflow is a long-running application. For rapid development, the recommendation
-is to use [air](https://github.com/air-verse/air).
+is to use [Air](https://github.com/air-verse/air).
 
 You can also run this with `go run ./worker` and restarting after every code change.
 
