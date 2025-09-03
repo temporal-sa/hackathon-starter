@@ -114,17 +114,17 @@ dependencies:
 * [Docker](https://www.docker.com/get-started)
 * [Docker Compose](https://docs.docker.com/compose/install)
 
-##### Go
+#### Go
 
 * [Go](https://go.dev)
 * [Air](https://github.com/air-verse/air)
 
-##### Python
+#### Python
 
 * [Python](https://www.python.org/downloads)
 * [uv](https://docs.astral.sh/uv)
 
-##### TypeScript
+#### TypeScript
 
 * [NodeJS](https://nodejs.org/en/download)
 * [nvm](https://github.com/nvm-sh/nvm)
