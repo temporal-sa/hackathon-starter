@@ -25,6 +25,7 @@ tasks:
       (cd python/ && uv sync)
       gp sync-done dependencies
     command: exit
+    openMode: split-right
 
   - name: Install pre-commit
     init: |
