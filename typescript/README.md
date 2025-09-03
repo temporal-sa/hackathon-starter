@@ -32,6 +32,13 @@ This starter application consists of two parts:
 
 ## Quick start
 
+Install dependencies using `npm`:
+
+```sh
+cd typescript
+npm ci
+```
+
 ### Workflow
 
 ```shell
