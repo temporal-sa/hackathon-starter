@@ -1,0 +1,35 @@
+include:
+  - ../compose.yaml
+
+services:
+  starter:
+    build:
+      context: .
+      target: builder
+    environment:
+      TEMPORAL_ADDRESS: temporal:7233
+    volumes:
+      - .:/home/python/app
+    links:
+      - temporal
+    depends_on:
+      worker:
+        condition: service_started
+      temporal:
+        condition: service_healthy
+    entrypoint: uv
+    command: run src/starter.py
+
+  worker:
+    build:
+      context: .
+      target: builder
+    environment:
+      TEMPORAL_ADDRESS: temporal:7233
+    volumes:
+      - .:/home/python/app
+    links:
+      - temporal
+    depends_on:
+      temporal:
+        condition: service_healthy
