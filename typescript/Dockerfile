@@ -2,7 +2,8 @@ FROM node:lts AS builder
 USER node
 WORKDIR /home/node/app
 COPY --chown=node:node . .
-RUN npm run build
+RUN npm ci \
+  && npm run build
 CMD [ "npm", "run", "worker:watch" ]
 
 FROM node:lts-slim
