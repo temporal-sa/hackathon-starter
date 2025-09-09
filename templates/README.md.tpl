@@ -42,6 +42,12 @@ by [configuring these environment variables](https://docs.temporal.io/develop/en
 
 ## Resources
 
+> [!NOTE]
+> [Temporal](https://temporal.io) is an open-source workflow orchestration platform
+> that allows developers to build reliable, long-running applications as simple
+> code. It ensures tasks run to completion by handling retries, failures, and
+> state management automatically.
+
 * [What is Temporal?](https://docs.temporal.io/temporal)
 * [Introduction to Workflows](https://docs.temporal.io/workflows)
 * [What is an Activity?](https://docs.temporal.io/activities)
@@ -57,12 +63,16 @@ For this hackathon, see the individual languages:
 ## Your development environment
 
 This is a hands-on hackathon, so you will need to write some code.
-
 You're free to use any development environment you wish, but we have provided
-some pre-configured environments so you can started quicker. These are all supported
-equally and you should choose the setup that you're most comfortable with.
+some pre-configured environments so you can get started quicker. These are all
+supported equally and you should choose the setup that you're most comfortable
+with.
 
 ### Codespaces
+
+> [!NOTE]
+> [Codespaces](https://github.com/features/codespaces) is a remote development
+> environment that allows one-click configuration of your development environment.
 
 [Codespaces](https://github.com/features/codespaces) is a remote development
 environment that allows one-click configuration of your development environment.
@@ -71,6 +81,12 @@ environment that allows one-click configuration of your development environment.
 
 ### Dev Containers (local)
 
+### Dev Containers
+
+> [!NOTE]
+> [Dev Containers](https://containers.dev) allows you to use a container as a
+> full-featured development environment.
+
 1. Install [Docker](https://www.docker.com/get-started/)
 1. Install [VSCode](https://code.visualstudio.com/) or [VSCode Insiders](https://code.visualstudio.com/insiders/)
 1. Install the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
@@ -78,21 +94,31 @@ environment that allows one-click configuration of your development environment.
     * Clone this repo and open in VSCode, or
     * [Open in Dev Containers](http://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/__OWNER__/__REPO__)
 
+### Docker Compose
+
+> [!NOTE]
+> Run the application inside [Docker Compose](https://docs.docker.com/compose).
+> This is **NOT** a development environment, but does allow you to run the whole
+> application stack on your local machine.
+>
+> This will run the Temporal UI on [localhost:8080](http://localhost:8080)
+
+1. Enter the directory for the language you wish to develop in (eg, `cd golang`)
+1. Install the dependencies. This is language-dependent, so please check the relevant
+   README.
+1. In one terminal window, run `docker compose up worker`
+1. In another terminal window, run `docker compose up starter`
+
 ### Gitpod
+
+> [!NOTE]
+> [Gitpod](https://www.gitpod.io) is a remote development environment that allows
+> one-click configuration of your development environment.
 
 [Gitpod](https://www.gitpod.io) is a remote development environment that allows
 one-click configuration of your development environment.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/__OWNER__/__REPO__)
-
-### Docker
-
-> [!TIP]
-> This will run the Temporal UI on [localhost:8080](http://localhost:8080)
-
-1. Enter the directory for the language you wish to develop in (eg, `cd golang`)
-1. In one terminal window, run `docker compose up worker`
-1. In another terminal window, run `docker compose up starter`
 
 ### Local development
 
