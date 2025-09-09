@@ -33,7 +33,7 @@ func main() {
 
 	// Synchronously wait for the workflow completion.
 	var result string
-	err = we.Get(context.Background(), &result)
+	err = we.Get(ctx, &result)
 	if err != nil {
 		log.Fatalln("Unable get workflow result", err)
 	}
