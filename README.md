@@ -70,6 +70,7 @@ Temporal a code-first platform and [many languages are supported](https://docs.t
 For this hackathon, see the individual languages:
 
 * [Go](./golang)
+* [Python](./python)
 * [TypeScript](./typescript)
 
 ## Your development environment
@@ -109,6 +110,8 @@ one-click configuration of your development environment.
 > This will run the Temporal UI on [localhost:8080](http://localhost:8080)
 
 1. Enter the directory for the language you wish to develop in (eg, `cd golang`)
+1. Install the dependencies. This is language-dependent, so please check the relevant
+   README.
 1. In one terminal window, run `docker compose up worker`
 1. In another terminal window, run `docker compose up starter`
 
