@@ -7,7 +7,7 @@ const { sayName } = proxyActivities<ReturnType<typeof createActivities>>({
 });
 
 // Add Workflow Definitions here.
-export async function helloWorld(name: string): Promise<string> {
+export async function helloWorldWorkflow(name: string): Promise<string> {
   // Your workflow code here
   return sayName(name);
 }

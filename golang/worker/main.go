@@ -21,7 +21,7 @@ func main() {
 	w := worker.New(c, golang.TASK_QUEUE_NAME, worker.Options{})
 
 	// Register the workflows
-	w.RegisterWorkflow(golang.HelloWorld)
+	w.RegisterWorkflow(golang.HelloWorldWorkflow)
 
 	// Register the activities - you may need to inject dependencies in here
 	activities, err := golang.NewActivities()

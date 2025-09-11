@@ -6,7 +6,7 @@ import (
 	"go.temporal.io/sdk/workflow"
 )
 
-func HelloWorld(ctx workflow.Context, name string) (string, error) {
+func HelloWorldWorkflow(ctx workflow.Context, name string) (string, error) {
 	ao := workflow.ActivityOptions{
 		StartToCloseTimeout: 10 * time.Second,
 	}

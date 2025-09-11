@@ -24,7 +24,7 @@ func main() {
 	ctx := context.Background()
 
 	// Execute the hello-world workflow with the input "Hacker"
-	we, err := c.ExecuteWorkflow(ctx, workflowOptions, golang.HelloWorld, "Hacker")
+	we, err := c.ExecuteWorkflow(ctx, workflowOptions, golang.HelloWorldWorkflow, "Hacker")
 	if err != nil {
 		log.Fatalln("Unable to execute workflow", err)
 	}
