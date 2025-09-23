@@ -3,7 +3,7 @@ from temporalio.client import Client
 from temporalio.worker import Worker
 from temporalio.envconfig import ClientConfigProfile
 from workflows import HelloWorldWorkflow
-from activities import sayName
+from activities import Activities
 import shared
 
 
@@ -12,11 +12,13 @@ async def main():
     connect_config = default_profile.to_client_connect_config()
 
     client = await Client.connect(**connect_config)
+    activities = Activities()
+
     worker = Worker(
         client,
         task_queue=shared.TASK_QUEUE_NAME,
         workflows=[HelloWorldWorkflow],
-        activities=[sayName],
+        activities=[activities.sayName],
     )
 
     print("Worker started.")

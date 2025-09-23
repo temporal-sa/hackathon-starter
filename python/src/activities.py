@@ -1,9 +1,14 @@
 from temporalio import activity
 
 
-@activity.defn
-async def sayName(name: str) -> str:
-    if name == "":
-        name = "anonymous human"
+class Activities:
+    # If you wish to connect any dependencies (eg, database), add in here
+    # def __init__(self, db: DB):
+    #     self.db = db
 
-    return f"Hello {name}!"
+    @activity.defn
+    async def sayName(self, name: str) -> str:
+        if name == "":
+            name = "anonymous human"
+
+        return f"Hello {name}!"
