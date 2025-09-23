@@ -1,10 +1,15 @@
 from temporalio import activity
+from params import AskForMoneyParams
 
 
 class Activities:
     # If you wish to connect any dependencies (eg, database), add in here
     # def __init__(self, db: DB):
     #     self.db = db
+
+    @activity.defn
+    async def askForMoney(self, params: AskForMoneyParams) -> str:
+        return f"{params.greeting} Can I have £{params.amount} please?"
 
     @activity.defn
     async def sayName(self, name: str) -> str:

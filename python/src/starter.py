@@ -4,6 +4,7 @@ from temporalio.client import Client
 from temporalio.envconfig import ClientConfigProfile
 import shared
 import workflows
+from params import HelloWorldParams
 
 
 async def main():
@@ -13,7 +14,7 @@ async def main():
     client = await Client.connect(**connect_config)
     result = await client.execute_workflow(
         workflows.HelloWorldWorkflow,
-        "Hacker",
+        HelloWorldParams(name="Hacker", amount=100),
         id=f"hello-world-workflow-{uuid.uuid4()}",
         task_queue=shared.TASK_QUEUE_NAME,
     )
