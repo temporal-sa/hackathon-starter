@@ -66,6 +66,9 @@ by [configuring these environment variables](https://docs.temporal.io/develop/en
 > code. It ensures tasks run to completion by handling retries, failures, and
 > state management automatically.
 
+* [Learn Temporal](https://learn.temporal.io)
+  * [Temporal 101](https://learn.temporal.io/courses/temporal_101)
+  * [Temporal 102](https://learn.temporal.io/courses/temporal_102)
 * [What is Temporal?](https://docs.temporal.io/temporal)
 * [Introduction to Workflows](https://docs.temporal.io/workflows)
 * [What is an Activity?](https://docs.temporal.io/activities)
