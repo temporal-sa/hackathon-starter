@@ -76,6 +76,7 @@ Temporal a code-first platform and [many languages are supported](https://docs.t
 For this hackathon, see the individual languages:
 
 * [Go](./golang)
+* [Python](./python)
 * [TypeScript](./typescript)
 
 ## Your development environment
