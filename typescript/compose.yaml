@@ -26,10 +26,32 @@ services:
       target: builder
     environment:
       TEMPORAL_ADDRESS: temporal:7233
+      OTEL_EXPORTER_OTLP_ENDPOINT: grpc://datadog-agent:4317
+      # Tag your metrics for dashboards & filters
+      OTEL_SERVICE_NAME: temporal-worker
+      OTEL_RESOURCE_ATTRIBUTES: deployment.environment=prod,service.version=1.2.3
+      # (Optional) if you also send traces via OTel SDKs, keep same endpoint
+      # OTEL_TRACES_EXPORTER: otlp
+      # OTEL_METRICS_EXPORTER: otlp
     volumes:
       - .:/home/node/app
     links:
       - temporal
     depends_on:
+      datadog-agent:
+        condition: service_started
       temporal:
         condition: service_healthy
+
+  datadog-agent:
+    image: gcr.io/datadoghq/agent:latest
+    environment:
+      DD_API_KEY: ${DD_API_KEY}            # set in your shell or .env
+      DD_SITE: datadoghq.com               # or datadoghq.com, us3, us5, etc.
+      # Enable OTLP receiver on HTTP 4318 (or use GRPC 4317, see below)
+      DD_OTLP_CONFIG_RECEIVER_PROTOCOLS_GRPC_ENDPOINT: "0.0.0.0:4317"
+      # Optional: enable logs ingest via OTLP if you also send logs
+      # DD_LOGS_ENABLED: "true"
+      # DD_OTLP_CONFIG_LOGS_ENABLED: "true"
+    ports:
+      - 4317:4317

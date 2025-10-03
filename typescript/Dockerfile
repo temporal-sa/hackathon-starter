@@ -1,4 +1,4 @@
-FROM node:lts AS builder
+FROM node:18.16-bullseye-slim AS builder
 USER node
 WORKDIR /home/node/app
 COPY --chown=node:node . .
@@ -6,7 +6,7 @@ RUN npm ci \
   && npm run build
 CMD [ "npm", "run", "worker:watch" ]
 
-FROM node:lts-slim
+FROM node:18.16-bullseye-slim
 WORKDIR /home/node/app
 COPY --from=builder /home/node/app/lib lib
 COPY --from=builder /home/node/app/package.json package.json
